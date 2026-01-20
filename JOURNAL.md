@@ -40,6 +40,43 @@ funcionamento do código e uma experiência de desenvolvimento menos desagradáv
 
 Encerrei por hoje para refletir mais e tentar encontrar a melhor opção, quiçá uma terceira.
 
-# 14/01/2026
+# 15/01/2026
 
-TBA
+Acabei optando por recriar toda a implementação da interface para um novo tipo.
+
+Por enquanto, mantive todas as alterações que estava fazendo no mesmo arquivo, com o fim de evitar criar
+confusão demais no meu mapa mental do projeto, que ainda não conheço tão bem. Pretendo dividir melhor e buscar
+os arquivos corretos para cada nova implementação que criei futuramente.
+
+Segui com as adaptações necessárias na função e parei durante a criação de uma nova `calcSequenceLock()`.
+
+# 17/01/2026
+
+Fiz bobagem com o git e perdi tudo o que estava fazendo. Não havia committado nenhuma alteração e decidi fazer
+checkout para a *master* para verificar algumas configurações e rodar testes. Percebi alterações na *master* e
+fiz um `git restore .`, imaginando que havia alterado algo na *master* sem querer e pretendendo testar sem minhas
+modificações. Quando retornei para minha branch de desenvolvimento, todas as alterações haviam sido perdidas.
+
+Tentei, em vão, alguns comandos diferentes do git para ver se conseguia recuperar.
+
+Por fim, recomecei o trabalho.
+
+# 18/01/2026
+
+Aproveitei que precisei re-escrever para tentar me planejar melhor, agora já com o pouco conhecimento que adquiri da
+última tentativa. Consegui compreender melhor o que [este PR](https://github.com/btcsuite/btcd/pull/1931) fez e segui
+com o refactor, dessa vez utilizando a interface *ChainCtx* e me baseando no que já havia sido desenvolvido para ela
+como exemplo do que fazer.
+
+Aproveitei, também, para já realizar as modificações necessárias nos arquivos necessários dessa vez, agora que já
+conheço um pouco melhor onde cada coisa deveria estar.
+
+Busquei adaptar em todas as localizações necessárias quando alterando alguma função já existente, inclusive em testes.
+
+# 19/01/2026
+
+Não consegui à apresentação do btcd ao vivo, mas assisti à gravação que foi liberada hoje.
+
+Além disso, segui com as adaptações necessárias para a função. São muitas modificações necessárias em muitos lugares diferentes,
+e estou tentando garantir o mínimo possível de inconsistências, visando pouco trabalho referente a correções em outros pontos
+do projeto no futuro.
