@@ -75,8 +75,28 @@ Busquei adaptar em todas as localizações necessárias quando alterando alguma 
 
 # 19/01/2026
 
-Não consegui à apresentação do btcd ao vivo, mas assisti à gravação que foi liberada hoje.
+Não consegui assistir à apresentação do btcd ao vivo, mas comecei a assistir à gravação que foi liberada hoje. Parei em 27:57,
+pretendendo terminar amanhã.
 
 Além disso, segui com as adaptações necessárias para a função. São muitas modificações necessárias em muitos lugares diferentes,
 e estou tentando garantir o mínimo possível de inconsistências, visando pouco trabalho referente a correções em outros pontos
 do projeto no futuro.
+
+# 20/01/2026
+
+Conversei no trabalho pra conseguir pegar um pouco hoje na parte da tarde, dada que a apresentação do Checkpoint Dia 1 será às
+20:40 do dia presente. Graças a isso, consegui evoluir um pouco mais nas adaptações.
+
+Aproveitei para me organizar melhor e subi tudo o que estava pendente para evitar mais desastres com o git, principalmente no meu
+fork do btcd.
+
+Consegui finalizar as adaptações à função principal e iniciei as correções de referências que ficaram incorretas após as alterações.
+Cheguei em um ponto no qual percebi que precisaria criar muitas novas funções na interface ChainCtx, mas por ora aparentemente já fiz
+as alterações necessárias apenas para o refactor da função `checkConnectBlock`. Fiquei em dúvida se devo continuar refatorando, para
+maximizar o uso das novas interfaces, ou se já é o bastante.
+
+Preciso ainda analisar se as implementações da interface ChainCtx() criadas estão no arquivo mais condizente, ou se devo mover elas para
+outro lugar.
+
+Tentei adiantar o máximo possível antes do horário do Checkpoint, então ainda não terminei de assistir à gravação da apresentação sobre
+btcd.
